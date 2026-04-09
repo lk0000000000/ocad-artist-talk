@@ -92,8 +92,8 @@ h4{
     transition: transform 0.1s ease;
 
     overflow: hidden;
-    height: 25vh;
-    width: 25vh;
+    height: 250px;
+    width: 250px;
     z-index: 1;
     background-color: rgb(177, 209, 196);
     
