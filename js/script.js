@@ -1,6 +1,7 @@
 console.log("nya :3")
 
 //copied from gravity tutorial
+//https://www.javaspring.net/blog/how-to-create-a-gravity-effect-with-javascript/
 class GravityElement {
   constructor(element) {
     this.element = element;
@@ -115,10 +116,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const elements = document.querySelectorAll('.gravity-element');
   const gravityElements = Array.from(elements).map(el => new GravityElement(el));
  
-  function animate() {
+  /*function animate() {
     gravityElements.forEach(element => element.update());
     requestAnimationFrame(animate);
-  }
+  }*/
  
   animate();
 });

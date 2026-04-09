@@ -14,11 +14,14 @@
 
 body{
     max-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: rgb(177, 209, 196);
 }
 #page{
     margin: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 p{
   font-family: Commissioner;
@@ -27,9 +30,9 @@ p{
 }
 #titles{
     max-width: 80vw;
-    margin-top: 80px;
+    margin-top: 30px;
     margin-left: 80px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 h1{
     font-family: Kings;
@@ -74,9 +77,10 @@ h4{
 
 /* the elements that cover the information*/
 .gravity-sim{
-    position:absolute;
+    position:fixed;
     width: 100vw;
     height: 100vh;
+    z-index: 1;
 }
 
 .gravity-element{
@@ -84,13 +88,14 @@ h4{
     border-radius: 50%;
     cursor: grab;
     user-select: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
     transition: transform 0.1s ease;
 
     overflow: hidden;
-    max-height: 25vh;
-    max-width: 25vh;
+    height: 25vh;
+    width: 25vh;
     z-index: 1;
+    background-color: rgb(177, 209, 196);
     
 }
 .gravity-element:hover{
@@ -105,12 +110,10 @@ h4{
     top: 28vh;
 }
 .element-3 {
-    background: #FFAD05;
     left: 30vw; 
     top: 65vh;
 }
 .element-4 {
-    background: #34a853;
     left: 40vw; 
     top: 13vh;
 }
@@ -123,7 +126,6 @@ h4{
     top: 47vh;
 }
 .element-7 {
-    background: #CA3C25;
     left: 78vw; 
     top: 24vh;
 }
@@ -156,9 +158,7 @@ h4{
 }
 #titles{
     max-width: 95vw;
-    margin-top: 80px;
     margin-left: 40px;
-    margin-bottom: 20px;
 }
 
 #speakers{
@@ -203,9 +203,7 @@ h4{
 }
 #titles{
     max-width: 95vw;
-    margin-top: 80px;
     margin-left: 40px;
-    margin-bottom: 20px;
 }
 #speakers{
     display:block;
@@ -216,5 +214,16 @@ h4{
 }
 .gravity-element:hover{
     scale: 0.55;
+}
+.element-1{
+   left: 2vw; 
+}
+.element-6{
+    left: 55vw; 
+    top: 47vh;
+}
+.element-7{
+    left: 14vw;
+    top: 79vh;
 }
 }
